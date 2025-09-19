@@ -25,13 +25,14 @@
     ~/.config/git/:
       path: git/*
       glob: true
-    ~/.config/brewfile/Brewfile:
-      path: brew/Brewfile
+    # Homebrew
+    ~/.homebrew/Brewfile:
+      path: homebrew/Brewfile
 - shell:
     - command: brew update
     - command: brew upgrade
     - command: brew upgrade --cask
-    - command: brew bundle install --file=~/.config/brewfile/Brewfile
+    - command: brew bundle --global
     # asdf
     - command: mkdir -p ~/.config/fish/completions
     - command: asdf completion fish > ~/.config/fish/completions/asdf.fish
