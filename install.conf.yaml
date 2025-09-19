@@ -21,8 +21,6 @@
     # ~/.vim: vim/
     ~/.vimrc: .vimrc
     ~/.vim/autoload/plug.vim: vim/autoload/plug.vim
-    # alacritty
-    ~/.config/alacritty/alacritty.yml: alacritty/alacritty.yml 
     # Git
     ~/.config/git/:
       path: git/*
@@ -34,10 +32,11 @@
     - command: brew upgrade
     - command: brew upgrade --cask
     - command: brew bundle install --file=~/.config/brewfile/Brewfile
-    - command: fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
-    - command: fish
-    - command: echo -e "\nsource "(brew --prefix asdf)"/libexec/asdf.fish" >> ~/.config/fish/config.fish
+    # asdf
     - command: mkdir -p ~/.config/fish/completions
+    - command: asdf completion fish > ~/.config/fish/completions/asdf.fish
+    # fisher
+    - command: fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
+    # rustup
     - command: rustup-init -y
     - command: rustup completions fish > ~/.config/fish/completions/rustup.fish
-    - command: conda init fish
