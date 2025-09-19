@@ -35,7 +35,9 @@
     # asdf
     - command: mkdir -p ~/.config/fish/completions
     - command: asdf completion fish > ~/.config/fish/completions/asdf.fish
-    # fisher
+    # fish & fisher
+    - command: echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+    - command: chsh -s /opt/homebrew/bin/fish
     - command: fish -c "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher"
     # rustup
     - command: rustup-init -y
