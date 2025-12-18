@@ -1,4 +1,7 @@
 alias gco 'git checkout'
+alias gds 'git diff --staged'
+alias gd 'git diff'
+alias gs 'git status'
 alias dockerc 'docker-compose'
 alias k 'kubectl'
 alias cdc 'cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'

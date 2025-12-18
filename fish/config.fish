@@ -1,13 +1,6 @@
 # Remove fish help message on every new session
 set fish_greeting
 
-# Update PATH
-fish_add_path /opt/homebrew/bin
-fish_add_path /opt/homebrew/sbin
-fish_add_path  $HOME/.cargo/bin
-fish_add_path  $HOME/.cargo/env.fish
-fish_add_path /opt/homebrew/opt/libpq/bin
-
 # Load aliases
 source ~/.config/fish/aliases.fish
 
@@ -27,3 +20,14 @@ if not contains $_asdf_shims $PATH
     set -gx --prepend PATH $_asdf_shims
 end
 set --erase _asdf_shims
+
+# Update PATH
+fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
+fish_add_path  $HOME/.cargo/bin
+fish_add_path  $HOME/.cargo/env.fish
+fish_add_path /opt/homebrew/opt/libpq/bin
+fish_add_path ~/.local/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jaimeliz/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/jaimeliz/Downloads/google-cloud-sdk/path.fish.inc'; end
