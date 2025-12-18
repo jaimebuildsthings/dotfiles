@@ -1,15 +1,14 @@
-[commit]
-    gpgsign = true
 [init]
     defaultBranch = main
 [user]
     name = Jaime Liz
-
-[core]
-    excludesFile = ~/.config/git/ignore
 [pull]
 	ff = only
+[core]
+    excludesFile = ~/.config/git/ignore
 [gpg]
   format = ssh
 [gpg "ssh"]
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+    gpgsign = true
