@@ -20,7 +20,6 @@
     # vim
     # ~/.vim: vim/
     ~/.vimrc: .vimrc
-    ~/.vim/autoload/plug.vim: vim/autoload/plug.vim
     # Git
     ~/.config/git/:
       path: git/*
