@@ -34,3 +34,6 @@ fish_add_path ~/.local/bin
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jaimeliz/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/jaimeliz/Downloads/google-cloud-sdk/path.fish.inc'; end
+
+# Pi
+fish_add_path "/Users/cleverjam/.asdf/installs/nodejs/lts/bin"
