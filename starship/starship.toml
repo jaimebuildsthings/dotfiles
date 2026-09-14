@@ -1,0 +1,22 @@
+command_timeout = 1000
+
+# Left side: default starship prompt. Right side: kubernetes context only.
+right_format = '$kubernetes'
+
+[kubernetes]
+disabled = false
+format = '[$symbol$context( \($namespace\))]($style)'
+symbol = '☸ '
+style = 'bold cyan'
+
+# Known environments show only a label. Anything unmatched shows the raw
+# context name in the default style. Rules are matched top to bottom.
+[[kubernetes.contexts]]
+context_pattern = '.*prod.*'
+context_alias = 'PROD'
+style = 'bold red'
+
+[[kubernetes.contexts]]
+context_pattern = '.*(staging|stg).*'
+context_alias = 'staging'
+style = 'bold yellow'

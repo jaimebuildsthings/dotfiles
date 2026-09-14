@@ -7,6 +7,9 @@ source ~/.config/fish/aliases.fish
 # Load cargo
 source "$HOME/.cargo/env.fish"
 
+# Load starship
+starship init fish | source
+
 # ASDF configuration code
 if test -z $ASDF_DATA_DIR
     set _asdf_shims "$HOME/.asdf/shims"
@@ -31,3 +34,6 @@ fish_add_path ~/.local/bin
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jaimeliz/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/jaimeliz/Downloads/google-cloud-sdk/path.fish.inc'; end
+
+# Pi
+fish_add_path "/Users/cleverjam/.asdf/installs/nodejs/lts/bin"

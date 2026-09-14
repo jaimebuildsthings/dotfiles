@@ -23,6 +23,8 @@
     ~/.config/nvim/lua/options.lua: nvim/lua/options.lua
 
     # ~/.vimrc: .vimrc
+    # Starship
+    ~/.config/starship.toml: starship/starship.toml
     # Git
     ~/.config/git/:
       path: git/*
