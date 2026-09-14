@@ -17,6 +17,7 @@
     ~/.config/fish/aliases.fish: fish/aliases.fish
     ~/.config/fish/functions/_multicd.fish: fish/functions/_multicd.fish
     ~/.config/fish/functions/envsource.fish: fish/functions/envsource.fish
+    ~/.config/fish/functions/dockerc.fish: fish/functions/dockerc.fish
     # vim
     ~/.config/nvim/init.lua: nvim/init.lua
     ~/.config/nvim/lua/keymaps.lua: nvim/lua/keymaps.lua
