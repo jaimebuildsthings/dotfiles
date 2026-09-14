@@ -1,97 +1,254 @@
+tap "atlassian/acli", trusted: true
+tap "jbangdev/tap"
 tap "jorgelbg/tap"
 tap "nats-io/nats-tools"
 tap "ngrok/ngrok"
+tap "open-cli-collective/tap"
+tap "pulumi/tap"
+tap "raine/workmux"
 tap "universal-ctags/universal-ctags"
+# Run your GitHub Actions locally
 brew "act"
-brew "gettext"
-brew "git"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Automatic configure script builder
 brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# GNU internationalization (i18n) and localization (l10n) library
+brew "gettext"
+# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# C library implementing the SSH2 protocol
 brew "libssh2"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# High performance key/value database
 brew "berkeley-db", link: true
+# Get/set bluetooth power and discoverable state
 brew "blueutil"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# Format bazel BUILD files with a standard convention
 brew "buildifier"
+# Core application library for C
 brew "glib"
+# Low-level library for pixel manipulation
 brew "pixman"
+# Official command-line tool for CircleCI
+brew "circleci"
+# Cross-platform make
 brew "cmake"
+# ACP server that exposes Codex CLI functionality for ACP-compatible clients
+brew "codex-acp"
+# GNU File, Shell, and Text utilities
 brew "coreutils"
+# Secure runtime for JavaScript and TypeScript
 brew "deno"
+# Bash, Zsh and Fish completion for Docker
 brew "docker-completion"
+# Isolated development environments using Docker
+brew "docker-compose"
+# Command-line tool for DigitalOcean
 brew "doctl"
+# Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
+# C++14 implementation of the TLS-1.3 standard
 brew "fizz"
+# Modular, composable client/server abstractions framework
 brew "wangle"
+# Facebook's branch of Apache Thrift, including a new C++ server
 brew "fbthrift"
+# Thrift functions for querying information from a service
 brew "fb303"
+# Shared library for Watchman and Eden projects
 brew "edencommon"
+# User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# HTTP and gRPC load testing and visualization tool and server
 brew "fortio"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Git extension for versioning large files
 brew "git-lfs"
+# Library to load and enumerate PKCS#11 modules
 brew "p11-kit"
+# Validating, recursive, caching DNS resolver
 brew "unbound"
+# GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Like cURL, but for gRPC
+brew "grpcurl"
+# OpenType text shaping engine
 brew "harfbuzz"
+# Post-modern modal text editor
 brew "helix"
+# Kubernetes package manager
 brew "helm"
-brew "shared-mime-info"
+# Improved top (interactive process viewer)
+brew "htop"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
-brew "libraw"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Feature-rich interactive Jira CLI
+brew "jira-cli"
+# Image manipulation library
 brew "jpeg"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Run local Kubernetes cluster in Docker
 brew "kind"
+# Network authentication protocol
 brew "krb5"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Portable Foreign Function Interface library
 brew "libffi"
+# Postgres C API library
 brew "libpq"
+# Library for reading RAW files from digital photo cameras
+brew "libraw"
+# General purpose TCP-IP emulator
 brew "libslirp"
+# C library SSHv1/SSHv2 client and server protocols
 brew "libssh"
+# YAML Parser
 brew "libyaml"
+# Utility for directing compilation
 brew "make"
+# Development kit for the Java programming language
 brew "openjdk"
+# Java-based project management
 brew "maven"
+# Run a Kubernetes cluster locally
 brew "minikube"
+# Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Utility for NATS Server and JetStream administration
+brew "nats"
+# Lightweight cloud messaging system
 brew "nats-server"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Command-line interface for New Relic
+brew "newrelic-cli"
+# Small build system for use with gyp or CMake
 brew "ninja"
+# Development kit for the Java programming language
 brew "openjdk@11"
+# Highly capable, feature-rich programming language
 brew "perl"
+# Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Package compiler and linker metadata toolkit
 brew "pkgconf"
+# Fast, disk space efficient package manager
 brew "pnpm"
+# Tool for managing OCI containers and pods
 brew "podman"
+# Alternative to docker-compose using podman
 brew "podman-compose"
+# Object-relational database system
+brew "postgresql@18", link: true
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
+# Cloud native development platform
+brew "pulumi"
+# Generic machine emulator and virtualizer
 brew "qemu"
+# Cross-platform application and UI framework
 brew "qt", link: false
+# RC file (dotfile) management
 brew "rcm"
+# Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
+# Persistent key-value database, with built-in net interface
+brew "redis", restart_service: :changed
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# CLI proxy to minimize LLM token consumption
+brew "rtk"
+# Rust toolchain installer
 brew "rustup"
+# Database of common MIME types
+brew "shared-mime-info"
+# Easy and Repeatable Kubernetes Development
 brew "skaffold"
+# Editor of encrypted files
+brew "sops"
+# Cross-shell prompt for astronauts
 brew "starship"
+# Code-search similar to ack
 brew "the_silver_searcher"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Vi 'workalike' with many additional features
 brew "vim"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Watch files and take action when they change
 brew "watchman"
+# Internet file retriever
 brew "wget"
+# Generate your Xcode project from a spec file and your folder structure
 brew "xcodegen"
+# Linter for YAML files
+brew "yamllint"
+# JavaScript package manager
 brew "yarn", link: false
-brew "jorgelbg/tap/pinentry-touchid"
-brew "nats-io/nats-tools/nats"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Software to interact with Atlassian Cloud from the terminal
+brew "atlassian/acli/acli"
+# Opinionated workflow tool that orchestrates git worktrees and tmux
+brew "raine/workmux/workmux", trusted: true
+# Command-line interface for 1Password
 cask "1password-cli"
+# GraphQL client
+cask "altair-graphql-client"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 cask "font-inconsolata"
 cask "font-jetbrains-mono-nerd-font"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
+# Desktop client for GitHub repositories
+cask "github"
+# Shows the next meeting in the menu bar
+cask "meetingbar"
+# Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
+vscode "anysphere.remote-containers"
+vscode "anysphere.remote-ssh"
+vscode "arzg.xcode-theme"
 vscode "catppuccin.catppuccin-vsc"
+vscode "dbaeumer.vscode-eslint"
+vscode "eamodio.gitlens"
+vscode "editorconfig.editorconfig"
+vscode "esbenp.prettier-vscode"
+vscode "firsttris.vscode-jest-runner"
+vscode "github.github-vscode-theme"
 vscode "k--kato.intellij-idea-keybindings"
+vscode "mateocerquetella.xcode-12-theme"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "rust-lang.rust-analyzer"
+vscode "typescriptteam.native-preview"
+vscode "yzhang.markdown-all-in-one"
+go "github.com/Bestowinc/dark-runner/v2"
+npm "@launchdarkly/ldcli"
+npm "corepack"
+npm "yarn"

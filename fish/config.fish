@@ -7,9 +7,6 @@ source ~/.config/fish/aliases.fish
 # Load cargo
 source "$HOME/.cargo/env.fish"
 
-# Load starship
-starship init fish | source
-
 # ASDF configuration code
 if test -z $ASDF_DATA_DIR
     set _asdf_shims "$HOME/.asdf/shims"

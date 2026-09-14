@@ -18,8 +18,11 @@
     ~/.config/fish/functions/_multicd.fish: fish/functions/_multicd.fish
     ~/.config/fish/functions/envsource.fish: fish/functions/envsource.fish
     # vim
-    # ~/.vim: vim/
-    ~/.vimrc: .vimrc
+    ~/.config/nvim/init.lua: nvim/init.lua
+    ~/.config/nvim/lua/keymaps.lua: nvim/lua/keymaps.lua
+    ~/.config/nvim/lua/options.lua: nvim/lua/options.lua
+
+    # ~/.vimrc: .vimrc
     # Git
     ~/.config/git/:
       path: git/*
