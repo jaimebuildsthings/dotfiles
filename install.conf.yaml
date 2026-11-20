@@ -26,6 +26,8 @@
     # ~/.vimrc: .vimrc
     # Starship
     ~/.config/starship.toml: starship/starship.toml
+    # tmux
+    ~/.config/tmux/tmux.conf: tmux/tmux.conf
     # Git
     ~/.config/git/:
       path: git/*
